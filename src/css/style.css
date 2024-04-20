@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap');
+
+* {
+  font-family: 'Open Sans', sans-serif;
+}
+
+
+#main{
+  position: relative;
+  width: 350px;
+  height: auto;
+  /* border: 3px solid rgb(196, 200, 200); */
+  left: 400px;
+  top: 75px;
+  background-color: rgb(224, 213, 213);
+  border: 15px solid rgb(238, 234, 234);
+}
+
+.calculator{
+  background-color: rgb(196, 200, 200);
+  display: grid;
+  grid-gap: 2px;
+  grid-template-rows: auto auto auto auto auto auto;
+  grid-template-columns: auto auto auto auto;
+  /* border: 10px solid rgb(172, 169, 169); */
+  border-radius: 10px;
+
+}
+
+.calculator>.display{
+  height: 70px;
+  grid-column: 1/span 4;
+  background-color: black;
+  color: white;
+  font-size: medium;
+}
+.calculator>.ac{
+  grid-column:1/3 ;
+  text-align: center;
+  background-color: rgb(94, 92, 92) ;
+  padding-top: 10px;
+}
+
+.calculator>.plusMinus{
+  height: 50px;
+  text-align: center;
+  background-color: rgb(94, 92, 92) ;
+  padding-top: 10px;
+
+}
+
+.calculator>.one,.two,.three,.four,.five,.six,.seven,.eight,.nine,.zero{
+  text-align: center;
+  background-color: rgb(189, 191, 191);
+  padding-top: 10px;
+
+}
+
+/* .calculator>.one,.two,.three,.four,.five,.six,.seven,.eight,.nine,.zero:hover{
+  background-color:black ;
+} */
+
+.calculator>.divide, .into,.plus,.minus,.dot,.equal{
+  height: 50px;
+  text-align: center;
+  background-color: rgb(177, 96, 100);
+  padding-top: 10px;
+}
+
+.calculator>.equal{
+  grid-column: 3/5;
+}
+
